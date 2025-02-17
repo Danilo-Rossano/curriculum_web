@@ -1,0 +1,182 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+    color: #333;
+}
+
+.container {
+    
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #4A90E2, #0037ff);
+    padding: 20px;
+    color: #fff;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 35%;
+    margin-left: 20px;
+    animation: pulse 2s infinite;
+}
+
+
+.header-info {
+    flex: 1;
+    text-align: center;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-info p {
+    margin: 5px 0;
+}
+
+.email{
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #242424;
+}
+
+section {
+    margin-bottom: 20px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+section:hover {
+    transform: translateY(-12px);
+    opacity: 0.9;
+}
+
+h2 {
+    font-size: 1.5em;
+    color:  #0f3de3da;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color:  #0f3de3da;
+}
+
+p, ul {
+    margin: 10px 0;
+    color: #181818;
+    font-size: 14px;
+}
+li{
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color:  #424242;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 20px 10px auto;
+    padding: 10px 20px;
+    background-color: #424242;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #242424;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-info h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    p, ul {
+        margin: 10px 0;
+        color: #181818;
+        font-size: 14px;
+    }
+    li{
+        font-size: 13px;
+    }
+}
